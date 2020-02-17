@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AvailabilityScreen"
+    tools:showIn="@layout/activity_availability_screen">
+
+    <Switch
+        android:id="@+id/switchMonday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="30sp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintBottom_toTopOf="@+id/mondayGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/daysGuideline2"
+        app:layout_constraintStart_toStartOf="@+id/checkGuidline"
+        app:layout_constraintTop_toTopOf="@+id/textGuideline" />
+
+    <Switch
+        android:id="@+id/switchTuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="30sp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintBottom_toTopOf="@+id/tuesdayGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/daysGuideline2"
+        app:layout_constraintStart_toStartOf="@+id/checkGuidline"
+        app:layout_constraintTop_toTopOf="@+id/mondayGuideline" />
+
+    <Switch
+        android:id="@+id/switchSunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="30sp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintBottom_toTopOf="@+id/saveGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/daysGuideline2"
+        app:layout_constraintStart_toStartOf="@+id/checkGuidline"
+        app:layout_constraintTop_toTopOf="@+id/weekednGuideline" />
+
+    <Switch
+        android:id="@+id/switchSaturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="30sp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintBottom_toTopOf="@+id/weekednGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/daysGuideline2"
+        app:layout_constraintStart_toStartOf="@+id/checkGuidline"
+        app:layout_constraintTop_toTopOf="@+id/fridayGuideline" />
+
+    <Switch
+        android:id="@+id/switchFriday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="30sp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintBottom_toTopOf="@+id/fridayGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/daysGuideline2"
+        app:layout_constraintStart_toStartOf="@+id/checkGuidline"
+        app:layout_constraintTop_toTopOf="@+id/thursdayGuideline" />
+
+    <Switch
+        android:id="@+id/switchThursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="30sp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintBottom_toTopOf="@+id/thursdayGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/daysGuideline2"
+        app:layout_constraintStart_toStartOf="@+id/checkGuidline"
+        app:layout_constraintTop_toTopOf="@+id/wednesdayGuideline" />
+
+    <Switch
+        android:id="@+id/switchWednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="30sp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintBottom_toTopOf="@+id/wednesdayGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/daysGuideline2"
+        app:layout_constraintStart_toStartOf="@+id/checkGuidline"
+        app:layout_constraintTop_toTopOf="@+id/tuesdayGuideline" />
+
+    <TextView
+        android:id="@+id/textSunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/d_dincondensed_bold_otf"
+        android:text="@string/sunday"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/saveGuideline"
+        app:layout_constraintStart_toStartOf="@+id/daysGuideline"
+        app:layout_constraintTop_toTopOf="@+id/weekednGuideline" />
+
+    <TextView
+        android:id="@+id/textSaturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/d_dincondensed_bold_otf"
+        android:text="@string/saturday"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/weekednGuideline"
+        app:layout_constraintStart_toStartOf="@+id/daysGuideline"
+        app:layout_constraintTop_toTopOf="@+id/fridayGuideline" />
+
+    <TextView
+        android:id="@+id/textFriday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/d_dincondensed_bold_otf"
+        android:text="@string/friday"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/fridayGuideline"
+        app:layout_constraintStart_toStartOf="@+id/daysGuideline"
+        app:layout_constraintTop_toTopOf="@+id/thursdayGuideline" />
+
+    <TextView
+        android:id="@+id/textWednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/d_dincondensed_bold_otf"
+        android:text="@string/wednesday"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/wednesdayGuideline"
+        app:layout_constraintStart_toStartOf="@+id/daysGuideline"
+        app:layout_constraintTop_toTopOf="@+id/tuesdayGuideline" />
+
+    <TextView
+        android:id="@+id/textThursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/d_dincondensed_bold_otf"
+        android:text="@string/thursday"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/thursdayGuideline"
+        app:layout_constraintStart_toStartOf="@+id/daysGuideline"
+        app:layout_constraintTop_toTopOf="@+id/wednesdayGuideline" />
+
+    <TextView
+        android:id="@+id/textTuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/d_dincondensed_bold_otf"
+        android:text="@string/tuesday"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tuesdayGuideline"
+        app:layout_constraintStart_toStartOf="@+id/daysGuideline"
+        app:layout_constraintTop_toTopOf="@+id/mondayGuideline" />
+
+    <TextView
+        android:id="@+id/textLeaderNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/d_dincondensed_bold_otf"
+        android:text="@string/monday"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/mondayGuideline"
+        app:layout_constraintStart_toStartOf="@+id/daysGuideline"
+        app:layout_constraintTop_toTopOf="@+id/textGuideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/textGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/saveGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mondayGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tuesdayGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/wednesdayGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/thursdayGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fridayGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/weekednGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/checkGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/saveGuidline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/daysGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/daysGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:id="@+id/contactUsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/availability"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/daysGuideline2"
+        app:layout_constraintStart_toStartOf="@+id/daysGuideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveScheduleButton"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/save"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/saveGuidline2"
+        app:layout_constraintEnd_toStartOf="@+id/daysGuideline2"
+        app:layout_constraintStart_toStartOf="@+id/daysGuideline"
+        app:layout_constraintTop_toTopOf="@+id/saveGuideline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

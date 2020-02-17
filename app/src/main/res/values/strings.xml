@@ -1,0 +1,65 @@
+<resources>
+    <!--LogIn Login-->
+    <string name="app_name">Vinnies Night Patrol</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password"><u>Forgot password?</u></string>
+    <string name="passwordHelp">Please enter your new password.</string>
+    <string name="change_password">Please enter 6 or more characters. Password must contain numeric and alphabetic characters.</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="change_password_title">Change Password</string>
+
+    <!--Landing Screen-->
+    <string name="title_activity_landing_screen">Home Page</string>
+    <string name="upcoming_shifts">Upcoming Shifts</string>
+    <string name="cancel_shift">Cancel Shift</string>
+    <string name="cancel_dialogue">Are you sure you wish to remove yourself from this shift?</string>
+    <string name="contacts">Contacts</string>
+    <string name="title_activity_contact_team_leader">ContactTeamLeader</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Settings-->
+    <string name="last_name">Last Name:</string>
+    <string name="phone">Phone:</string>
+    <string name="e_mail">E-Mail:</string>
+    <string name="first_name">First Name:</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="change_deatils">Change Details</string>
+
+    <!--Bottom Nav-->
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_availability">Availability</string>
+    <string name="bottom_nav_contacts">Contacts</string>
+
+    <!--Availability-->
+    <string name="title_activity_availability_screen">AvailabilityScreen</string>
+    <string name="availability">Availability </string>
+    <string name="monday">Monday </string>
+    <string name="tuesday">Tuesday </string>
+    <string name="wednesday">Wednesday </string>
+    <string name="thursday">Thursday </string>
+    <string name="friday">Friday </string>
+    <string name="saturday">Saturday </string>
+    <string name="sunday">Sunday </string>
+
+    <!--Contacts-->
+    <string name="title_activity_contact_us">ContactUs</string>
+    <string name="team_leader">Team Leader</string>
+
+    <!--Generic-->
+    <string name="save">Save</string>
+    <string name="vinnies_logo">Vinnies Logo</string>
+    <string name="exit">Exit</string>
+    <string name="reset">Reset</string>
+
+    <!--Credits-->
+    <string name="cancel_icon"><div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></string>
+    <string name="van_icon"><div>Icons made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></string>
+    <string name="settings_icon"><div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></string>
+    <string name="developer_credits">Developed by: Sasha Tsiaparis, Jarrad Hurley, Kiran Bangalore, Nicholas Fennell</string>
+    <string name="credit">Credits</string>
+</resources>

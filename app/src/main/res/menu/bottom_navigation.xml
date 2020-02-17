@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/bottom_nav_home" />
+
+    <item
+        android:id="@+id/nav_availability"
+        android:icon="@drawable/ic_calendar_interface_symbol_tool"
+        android:title="@string/bottom_nav_availability" />
+
+    <item
+        android:id="@+id/nav_contacts"
+        android:icon="@drawable/ic_contacts_black_24dp"
+        android:title="@string/bottom_nav_contacts" />
+
+
+</menu>
