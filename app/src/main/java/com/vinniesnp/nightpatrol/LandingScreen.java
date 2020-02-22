@@ -162,7 +162,9 @@ public class LandingScreen extends AppCompatActivity {
                     adapter = new ShiftAdapter(shifts_list);
                     recyclerView.setAdapter(adapter);
 
-                    setContactId(shifts_list.get(0).getId());
+                    if(!shifts_list.isEmpty()){
+                        setContactId(shifts_list.get(0).getId());
+                    }
 
                     adapter.setOnItemClickListener(new ShiftAdapter.OnItemClickListener() {
                         @Override
