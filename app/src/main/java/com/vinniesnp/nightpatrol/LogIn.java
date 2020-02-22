@@ -32,7 +32,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LogIn extends AppCompatActivity {
 
-    public String BASE_URL = "https://us-central1-vinnies-api-staging.cloudfunctions.net/api/";
+    public String BASE_URL;
 
     private static final String TAG = "LogIn - Error";
 
@@ -56,6 +56,9 @@ public class LogIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final GlobalClass globalV = (GlobalClass) getApplicationContext();
+        BASE_URL = globalV.getBaseURL();
 
         View loginView = findViewById(R.id.loginView);
 

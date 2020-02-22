@@ -38,7 +38,7 @@ public class ContactUs extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private ContactAdapter adapter;
-    private String BASE_URL = "https://us-central1-vinnies-api-staging.cloudfunctions.net/api/";
+    private String BASE_URL;
     public String mTOKEN;
     private String TAG = "ContactsVolunteer - Error";
     private String shiftID;
@@ -49,6 +49,9 @@ public class ContactUs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_us);
+
+        final GlobalClass globalV = (GlobalClass) getApplicationContext();
+        BASE_URL = globalV.getBaseURL();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
 
