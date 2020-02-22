@@ -33,7 +33,7 @@ public class AvailabilityScreen extends AppCompatActivity {
     public Switch switchMonday, switchTuesday, switchWednesday, switchThursday, switchFriday, switchSaturday, switchSunday;
     public boolean monday, tuesday, wednesday, thursday, friday, saturday, sunday;
 
-    private String BASE_URL = "https://us-central1-vinnies-api-staging.cloudfunctions.net/api/";
+    private String BASE_URL;
     public String mTOKEN;
     private String TAG = "Availability - Error";
     public Button saveScheduleButton;
@@ -45,6 +45,9 @@ public class AvailabilityScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_availability_screen);
+
+        final GlobalClass globalV = (GlobalClass) getApplicationContext();
+        BASE_URL = globalV.getBaseURL();
 
         mTOKEN = getIntent().getStringExtra("token");
         contactId = getIntent().getStringExtra("id");

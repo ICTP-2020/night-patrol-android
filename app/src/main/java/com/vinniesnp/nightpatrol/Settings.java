@@ -30,7 +30,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Settings extends AppCompatActivity {
 
     public String mTOKEN;
-    private String BASE_URL = "https://us-central1-vinnies-api-staging.cloudfunctions.net/api/";
+    private String BASE_URL;
     private String TAG = "Settings - Error";
     private String firstName;
     private String lastName;
@@ -44,6 +44,9 @@ public class Settings extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        final GlobalClass globalV = (GlobalClass) getApplicationContext();
+        BASE_URL = globalV.getBaseURL();
 
         mTOKEN = getIntent().getStringExtra("token");
         userID = getIntent().getStringExtra("userId");
